@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cgq.cardslide.ui.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_rr"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人人美剧订阅特效" />
+
+        <Button
+            android:id="@+id/btn_tt"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="探探滑动卡片特效" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_unlock"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可拖动十字坐标系" />
+
+        <Button
+            android:id="@+id/btn_custom_recycler"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义recyclerView" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_free_view"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="悬浮窗" />
+
+        <Button
+            android:id="@+id/btn_slide_code"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="仿斗鱼滑动验证码" />
+
+        <Button
+            android:id="@+id/btn_code"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码系列" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_nested"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="根据子View滑动改变收缩放大Header布局" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jsoup"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用Jsoup抓取糗事百科数据" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_WX_shooting"
+            style="@style/AutoWrapTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信拍摄功能模仿" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

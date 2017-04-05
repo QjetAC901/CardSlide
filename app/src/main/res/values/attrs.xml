@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="free" >
+    <attr name="millisInFuture" format="integer" />
+    <attr name="toAlpha" format="float" />
+    <attr name="moveAble" format="boolean"/>
+    <attr name="autoBack" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 图片滑动解锁  -->
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension"/>
+        <attr name="captchaHeight" format="dimension"/>
+        <attr name="matchDeviation" format="dimension"/>
+    </declare-styleable>
+
+<!-- 模仿微信拍摄功能的控件 -->
+    <attr name="iconWidth" format="dimension" />
+    <attr name="iconMargin" format="dimension" />
+    <attr name="iconSrc" format="reference" />
+
+    <declare-styleable name="JCameraView">
+        <attr name="iconWidth" />
+        <attr name="iconMargin" />
+        <attr name="iconSrc" />
+    </declare-styleable>
+
+</resources>

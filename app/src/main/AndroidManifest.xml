@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cgq.cardslide">
+
+    <uses-sdk tools:overrideLibrary="cn.bingoogolapple.photopicker,cn.bingoogolapple.androidcommon.adapter" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!--   此权限在Library中申请了 <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.RrCardActivity" />
+        <activity android:name=".ui.TtCardActivity" />
+        <activity android:name=".ui.RecyclerViewTestActivity" />
+        <activity android:name=".ui.UnlockActivity" />
+        <activity android:name=".ui.FreeViewActivity" />
+        <activity android:name=".ui.CodeActivity" />
+        <activity android:name=".ui.NestedScrollActivity" />
+        <activity android:name=".ui.JsoupActivity" />
+        <activity android:name=".ui.WebViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.PROCESS_TEXT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.ShootingActivity"></activity>
+    </application>
+
+</manifest>

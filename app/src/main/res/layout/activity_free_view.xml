@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_free_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context="com.cgq.cardslide.ui.FreeViewActivity">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="页面1"
+        android:textSize="30sp" />
+
+    <com.cgq.cardslide.view.FreeView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/black_bg"
+        android:padding="5dp"
+        app:autoBack="true"
+        android:visibility="gone"
+        app:millisInFuture="2500"
+        android:orientation="vertical"
+        app:moveAble="true">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="中杯"
+            android:textColor="@drawable/text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="大杯"
+            android:textColor="@drawable/text_color_selector" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp"
+            android:text="超大杯"
+            android:textColor="@drawable/text_color_selector" />
+
+    </com.cgq.cardslide.view.FreeView>
+
+
+<RelativeLayout
+    android:id="@+id/rl_swipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <com.cgq.cardslide.view.SwipeCaptchaView
+        android:id="@+id/swipeCaptchaView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        tools:src="@mipmap/pic11"
+        app:captchaHeight="30dp"
+        app:captchaWidth="30dp"/>
+
+    <SeekBar
+        android:id="@+id/dragBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/swipeCaptchaView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:progressDrawable="@drawable/dragbg"
+        android:thumb="@drawable/thumb_bg"/>
+
+    <Button
+        android:id="@+id/btnChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="老板换码"/>
+</RelativeLayout>
+
+
+
+</RelativeLayout>

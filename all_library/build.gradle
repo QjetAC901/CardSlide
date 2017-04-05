@@ -1,0 +1,43 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    compile 'com.android.support:design:25.1.0'
+    //卡片滑动adapter依赖包
+    compile 'com.github.mcxtzhang:all-base-adapter:V1.3.0'
+    //卡片滑动适配器依赖包
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //二维码扫描
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+    //自定义的选择手机相册的界面
+    compile 'cn.bingoogolapple:bga-photopicker:1.2.3@aar'
+    compile 'cn.bingoogolapple:bga-adapter:1.1.8@aar'
+    compile 'com.google.zxing:core:3.3.0'
+    //张宏洋的 ListView适配器依赖  在可伸缩的头布局用到
+    compile 'com.zhy:base-adapter:2.0.0'
+    //Jsoup网络爬虫
+    compile 'org.jsoup:jsoup:1.10.2'
+}
